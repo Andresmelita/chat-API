@@ -44,7 +44,7 @@ const postUser = (req, res) => {
     userControllers.createUser({firstName, lastName, email, password,gender, birthday})
         .then(async(data) => {
             await mailer.sendMail({
-                from: '<andresmelita1995@gmail.com>',
+                from: config.api.emailMailer,
                 to: data.email,
                 subject: `Bienvenido ${data.firstName}`,
                 html: `<h1>Bienvenido a nuestra app ${data.firstName}</h1> <a href="#" class="myButton"></a> `,

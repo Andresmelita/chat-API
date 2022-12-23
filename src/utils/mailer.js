@@ -6,7 +6,7 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'andresmelita1995@gmail.com',
+        user: config.api.emailMailer,
         pass: config.api.emailPass
     },
     //soluciona problema con certficado autofirmado
