@@ -1,5 +1,5 @@
 
-#Retos Opcionales (Progreso)
+# Retos Opcionales (Progreso)
 
 1. /api/v1/conversations/:conversation_id/participants
     - [ok] Esta ruta debe estar protegida
